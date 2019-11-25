@@ -5,7 +5,13 @@
                 <form [formGroup]="postForm" novalidate (ngSubmit)="SubmitPost()">
                     <div class="formDiv">
                         <textarea formControlName="post" class="materialize-textarea"></textarea>
+                        <div class="formDiv">
+                            <button class="btn postBtn">
+                                Post
+                            </button>
+                        </div>
                         <div class="file-field input-field">
+
                             <div class="row">
                                 <div class="col s6">
                                     <div class="btn">
@@ -13,18 +19,15 @@
                                             <i class="material-icons">image</i>
                                             Image
                                         </span>
-                                        <input type="file">
+                                         <input type="file">
                                     </div>
                                     <div class="file-path-wrapper">
                                         <input class="file-path validate" type="text">
                                     </div>
                                 </div>
-                                <div class="col s6">
-                                    <button class="btn postBtn">
-                                        Post
-                                    </button>
-                                </div>
+
                             </div>
+
                         </div>
                     </div>
                 </form>
